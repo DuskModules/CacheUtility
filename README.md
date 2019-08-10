@@ -1,5 +1,7 @@
 # Cache Utility
-<module_summary_info>
+The CacheUtility module provides an easy way to assign runtime caches of data to ScriptableObjects.
+
+Modifying member fields in a ScriptableObject during runtime has inconsistent behaviour. In the editor, the set fields remain the same between test runs. In a build, the set fields are reset at launch. By assigning a cache to them, the information is set when they are first called upon, once per launch or test run, and do not keep data between runs.
 
 <extra_module_info>
 
